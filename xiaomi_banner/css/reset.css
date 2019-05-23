@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* 清除页面中自带的，，， */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,button,input,textarea,th,td{
+    margin: 0;padding: 0;
+}
+
+body{
+    font-size: 12px;
+    font-style: normal;
+    font-family: "\5FAE\8F6F\96C5\9ED1",Arial, Helvetica, sans-serif
+}
+small{
+    font-size: 12px
+}
+h1{
+    font-size: 18px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 14px;
+}
+h4,h5,h6{
+    font-size: 100%
+}
+/* 清除列表前的默认样式 */
+ul,ol{
+    list-style: none;
+}
+
+/* 清除a标签的下划线 */
+a{
+    text-decoration: none;
+    background-color: transparent
+}
+a:hover,a:active{
+    outline-width: 0;
+    text-decoration: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr{
+    border: 0;
+    height: 1px
+}
+img{
+    border-style: none;
+}
+img:not([src]){
+    display: none;
+}
+svg:not(:root){
+    overflow: hidden
+}
+html{
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%
+}
+input,textarea,button,a{
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0)
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
+    display: block
+}
+
+/* 清除浮动样式 */
+.clearfix:after{
+    display: block;
+    content: "";
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+
